@@ -9,11 +9,11 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.AuthorizationController">
    <children>
       <AnchorPane layoutX="-3.0" layoutY="87.0" prefHeight="319.0" prefWidth="709.0" style="-fx-background-color: #fafafa;">
          <children>
-            <TextField layoutX="226.0" layoutY="57.0" prefHeight="38.0" prefWidth="275.0" promptText="login">
+            <TextField fx:id="loginField" layoutX="226.0" layoutY="57.0" prefHeight="38.0" prefWidth="275.0" promptText="login">
                <font>
                   <Font name="Monospaced Regular" size="20.0" />
                </font>
@@ -21,12 +21,12 @@
                   <Cursor fx:constant="CROSSHAIR" />
                </cursor>
             </TextField>
-            <PasswordField layoutX="226.0" layoutY="120.0" prefHeight="38.0" prefWidth="275.0" promptText="password">
+            <PasswordField fx:id="passwordField" layoutX="226.0" layoutY="120.0" prefHeight="38.0" prefWidth="275.0" promptText="password">
                <font>
                   <Font name="Monospaced Regular" size="20.0" />
                </font>
             </PasswordField>
-            <Button layoutX="272.0" layoutY="183.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="183.0" style="-fx-background-color: #2E3348 #2E3348;" text="Sing In" textFill="#fafafa">
+            <Button fx:id="singInButton" layoutX="272.0" layoutY="183.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="183.0" style="-fx-background-color: #2E3348 #2E3348;" text="Sing In" textFill="#fafafa">
                <font>
                   <Font name="Monospaced Regular" size="26.0" />
                </font>
@@ -43,7 +43,7 @@
             <Font name="Monospaced Regular" size="41.0" />
          </font>
       </Label>
-      <Button layoutX="566.0" layoutY="28.0" mnemonicParsing="false" style="-fx-background-color: #F2B54A#F2B54A;" text="Registration" textFill="#fafafa">
+      <Button fx:id="registrationButton" layoutX="566.0" layoutY="28.0" mnemonicParsing="false" style="-fx-background-color: #F2B54A#F2B54A;" text="Registration" textFill="#fafafa">
          <font>
             <Font size="17.0" />
          </font>

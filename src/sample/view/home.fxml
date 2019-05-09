@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.HomeController">
+    <children>
+        <AnchorPane layoutX="-4.0" layoutY="81.0" prefHeight="319.0" prefWidth="709.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Label layoutX="606.0" layoutY="273.0" text="DK project " textFill="#2e3348">
+                    <font>
+                        <Font name="SignPainter-HouseScript" size="24.0" />
+                    </font>
+                </Label>
+            <Label layoutX="244.0" layoutY="32.0" text="Home page" textFill="#2e3348">
+               <font>
+                  <Font name="Monospaced Regular" size="41.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="homeImageButton" fitHeight="150.0" fitWidth="200.0" layoutX="255.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/home.png" />
+               </image>
+            </ImageView>
+            </children>
+        </AnchorPane>
+        <Label layoutX="264.0" layoutY="20.0" text="Join Us" textFill="#fafafa">
+            <font>
+                <Font name="Monospaced Regular" size="41.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
